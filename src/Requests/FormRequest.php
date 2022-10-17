@@ -17,6 +17,7 @@ use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 class FormRequest extends Request implements ValidatesWhenResolved
 {
     use ValidatesWhenResolvedTrait;
+    
     /**
      * The container instance.
      *
