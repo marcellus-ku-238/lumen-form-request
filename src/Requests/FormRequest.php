@@ -60,6 +60,8 @@ class FormRequest extends Request implements ValidatesWhenResolved
      */
     protected function getValidatorInstance()
     {
+        // As Laravel and lumen both defaultly provide instance for validation we
+        // we can directly use that as a hook for create instance instead of from container.
         $factory = !empty(app()) ? app('validator') : $this->container->make(ValidationFactory::class);
         if (method_exists($this, 'validator')) {
             return $this->container->call([$this, 'validator'], compact('factory'));
@@ -99,7 +101,6 @@ class FormRequest extends Request implements ValidatesWhenResolved
     protected function passesAuthorization()
     { 
         if (method_exists($this, 'authorize')) {
-            if(empty($this->container)) $this->setContainer(new Container);
             return $this->container->call([$this, 'authorize']);
         }
         return false;

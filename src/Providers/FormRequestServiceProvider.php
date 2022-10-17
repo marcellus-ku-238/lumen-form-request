@@ -2,6 +2,7 @@
 
 namespace MarcellusKu283\LumenFormRequest\Providers;
 
+use Illuminate\Container\Container;
 use Laravel\Lumen\Http\Redirector;
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
@@ -43,6 +44,7 @@ class FormRequestServiceProvider extends ServiceProvider
      */
     protected function initializeRequest(FormRequest $form, Request $current)
     {
+        $form->setContainer(new Container);
         $files = $current->files->all();
         $files = is_array($files) ? array_filter($files) : $files;
         $form->initialize(
