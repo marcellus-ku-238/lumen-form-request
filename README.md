@@ -22,4 +22,7 @@ https://laravel.com/docs/9.x/validation#form-request-validation
 ## Contributers
 - [Parth Gajjar](https://github.com/marcellus-ku-238)
 
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
