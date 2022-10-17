@@ -1,3 +1,25 @@
-# lumen-form-request
+# Lumen-form-request
+Form Request validation for Lumen framework
 
-This package is in under development.
+### How to install
+
+```
+composer require marcellus-ku-283/lumen-form-request
+```
+
+* Add the service provider in bootstrap/app.php
+
+```
+$app->register(\MarcellusKu283\LumenFormRequest\Providers\FormRequestServiceProvider::class);
+```
+
+
+* Link for Laravel Form Request validation documentation
+
+https://laravel.com/docs/9.x/validation#form-request-validation
+
+
+## Contributers
+- [Parth Gajjar](https://github.com/marcellus-ku-238)
+
+
