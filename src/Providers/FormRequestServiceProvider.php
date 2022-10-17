@@ -44,7 +44,6 @@ class FormRequestServiceProvider extends ServiceProvider
      */
     protected function initializeRequest(FormRequest $form, Request $current)
     {
-        $form->setContainer(new Container);
         $files = $current->files->all();
         $files = is_array($files) ? array_filter($files) : $files;
         $form->initialize(
