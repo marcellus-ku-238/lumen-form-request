@@ -1,12 +1,13 @@
 {
-    "name": "marcellus_ku_283/lumen-form-request",
+    "name": "marcellus-ku-283/lumen-form-request",
     "description": "This package gives you support to validate your request via formRequest class.",
     "type": "library",
     "require": {
         "illuminate/contracts": "10.x-dev",
         "illuminate/validation": "10.x-dev",
         "illuminate/auth": "10.x-dev",
-        "illuminate/http": "10.x-dev"
+        "illuminate/http": "10.x-dev",
+        "illuminate/support": "10.x-dev"
     },
     "license": "MIT",
     "autoload": {
