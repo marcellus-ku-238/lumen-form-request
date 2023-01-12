@@ -4,13 +4,13 @@ Form Request validation for Lumen framework
 ### How to install
 
 ```
-composer require marcellus-ku-283/lumen-form-request
+composer require parth-vadgama/lumen-form-request
 ```
 
 * Add the service provider in bootstrap/app.php
 
 ```
-$app->register(\MarcellusKu283\LumenFormRequest\Providers\FormRequestServiceProvider::class);
+$app->register(\ParthVadgama\LumenFormRequest\Providers\FormRequestServiceProvider::class);
 ```
 
 
@@ -20,7 +20,7 @@ https://laravel.com/docs/9.x/validation#form-request-validation
 
 
 ## Contributers
-- [Parth Gajjar](https://github.com/marcellus-ku-238)
+- [Parth Vadgama](https://github.com/marcellus-ku-238)
 
 ## License
 
