@@ -1,6 +1,6 @@
 <?php
 
-namespace ParthVadgama\LumenFormRequest\Providers;
+namespace MarcellusKu283\LumenFormRequest\Providers;
 
 use Illuminate\Container\Container;
 use Laravel\Lumen\Http\Redirector;

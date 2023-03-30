@@ -4,13 +4,13 @@ Form Request validation for Lumen framework
 ### How to install
 
 ```
-composer require parth-vadgama/lumen-form-request
+composer require marcellus-ku-283/lumen-form-request
 ```
 
 * Add the service provider in bootstrap/app.php
 
 ```
-$app->register(\ParthVadgama\LumenFormRequest\Providers\FormRequestServiceProvider::class);
+$app->register(\MarcellusKu283\LumenFormRequest\Providers\FormRequestServiceProvider::class);
 ```
 
 

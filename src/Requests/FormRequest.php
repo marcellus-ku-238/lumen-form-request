@@ -1,6 +1,6 @@
 <?php
 
-namespace ParthVadgama\LumenFormRequest\Requests;
+namespace MarcellusKu283\LumenFormRequest\Requests;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
